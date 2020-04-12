@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="4.9.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TodoApp.Controller\TodoApp.Controller.csproj" />
+    <ProjectReference Include="..\TodoApp.DomainModel\TodoApp.DomainModel.csproj" />
+    <ProjectReference Include="..\TodoApp.Presenter\TodoApp.Presenter.csproj" />
+    <ProjectReference Include="..\TodoApp.Repositry\TodoApp.Repositry.csproj" />
+    <ProjectReference Include="..\TodoApp.UseCase\TodoApp.UseCase.csproj" />
+  </ItemGroup>
+
+</Project>

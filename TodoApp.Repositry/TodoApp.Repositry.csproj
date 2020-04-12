@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiteDB" Version="5.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TodoApp.DomainModel\TodoApp.DomainModel.csproj" />
+    <ProjectReference Include="..\TodoApp.UseCase\TodoApp.UseCase.csproj" />
+  </ItemGroup>
+
+</Project>
